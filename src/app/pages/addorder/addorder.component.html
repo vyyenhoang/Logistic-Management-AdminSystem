@@ -1,0 +1,74 @@
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container mr-5 bg-white ">
+  <div class="row">
+                <div class=" col-sm-6 col-xl-12 col-lg-6  mb-2">
+
+
+  <!-- Default form contact -->
+
+      <p class="h4 text-center mb-4">Add New Order<i class="fa fa-plus"></i></p>
+<form  (ngSubmit)="addorder()">
+  <div class="md-form">
+      <!-- Default input name -->
+      <label for="Product ID" class="text-dark"><i class="fa fa-id-card">Product ID</i></label>
+      <input type="text" id="bname" class="form-control" name="pid" required [(ngModel)]='data.pid'>
+
+      </div>
+      <br>
+      <div class="md-form">
+
+      <!-- Default input email -->
+      <label for="Customer ID" class="text-dark"><i class="fa fa-link">Customer ID</i></label>
+      <input type="text" id="burl" class="form-control" name="cid" required [(ngModel)]='data.cid'>
+
+     </div>
+     <br>
+     <div class="md-form">
+
+      <!-- Default input subject --><i class="fa fa-image">Tracking Number</i>
+      <label for="Tracking Number" class="text-dark"></label>
+      <input type="text" id="blogo" class="form-control" name="trackno" required [(ngModel)]='data.trackno'>
+
+     </div>
+     <br>
+     <div class="md-form">
+
+      <!-- Default textarea message -->
+      <label for="Email" class="text-dark"><i class="fa fa-file">Email</i></label>
+      <input type="email" id="brandfolder" class="form-control" name="email" required [(ngModel)]='data.email'>
+
+  </div>
+  <br>
+  <div class="md-form">
+
+    <!-- Default textarea message -->
+    <label for="Status" class="text-dark"><i class="fa fa-file">Status</i></label>
+    <input type="text" id="brandfolder" class="form-control" name="status" required [(ngModel)]='data.status'>
+
+</div>
+<br>
+<div class="md-form">
+
+  <!-- Default textarea message -->
+  <label for="Track Info" class="text-dark"><i class="fa fa-file">Track Info</i></label>
+  <input type="text" id="brandfolder" class="form-control" name="info" required [(ngModel)]='data.info'>
+
+</div>
+
+      <div class="text-center mt-4">
+          <button class="btn  bg-info" id="bsubmit" type="submit">Send<i class="fa fa-save ml-2"></i></button>
+      </div>
+    </form>
+  <!-- Default form contact -->
+     </div>
+     </div>
+  </div>
